@@ -1,4 +1,4 @@
-package org.example;
+package module8;
 
 public class Main {
     public static void main(String[] args) {
