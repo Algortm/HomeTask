@@ -1,4 +1,4 @@
-package module9.Queue;
+package module9.queue;
 
 import java.util.StringJoiner;
 

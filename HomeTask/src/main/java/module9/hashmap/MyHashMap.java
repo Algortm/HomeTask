@@ -1,7 +1,4 @@
-package module9.HashMap;
-
-import java.util.HashMap;
-import java.util.StringJoiner;
+package module9.hashmap;
 
 public class MyHashMap {
 //    put(Object key, Object value) додає пару ключ + значення

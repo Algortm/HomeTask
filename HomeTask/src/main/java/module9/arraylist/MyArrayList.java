@@ -1,4 +1,4 @@
-package module9.ArrayList;
+package module9.arraylist;
 
 
 import java.util.StringJoiner;

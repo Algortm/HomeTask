@@ -1,4 +1,4 @@
-package module9.Stack;
+package module9.stack;
 
 import java.util.StringJoiner;
 

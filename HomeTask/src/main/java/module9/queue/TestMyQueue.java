@@ -1,4 +1,4 @@
-package module9.Queue;
+package module9.queue;
 
 public class TestMyQueue<T> {
     public static void main(String[] args) {

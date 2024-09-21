@@ -1,6 +1,4 @@
-package module9.LinkedList;
-
-import org.w3c.dom.Node;
+package module9.linkedlist;
 
 import java.util.StringJoiner;
 

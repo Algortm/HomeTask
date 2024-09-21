@@ -1,4 +1,4 @@
-package module9.LinkedList;
+package module9.linkedlist;
 
 public class TestMyLinkedList {
     public static void main(String[] args) {
