@@ -1,8 +1,8 @@
 package module10.task1;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.*;
 
 public class ReadFileWithNumber {
     static final String DEFAULT_PATH_FILE = "src/main/resources/file1.txt";
@@ -26,10 +26,12 @@ public class ReadFileWithNumber {
 
     }
     static public void checkValidFormatNumber(List<String> readersArray){
+        String regex = "\\(\\d{3}\\) \\d{3}-\\d{4}|\\d{3}-\\d{3}-\\d{4}";
+        Pattern pattern = Pattern.compile(regex);
         System.out.println("Text after check valid format:");
         for(String txt: readersArray){
-            char[] txtArrayChar = txt.toCharArray();
-            if((txtArrayChar[0] =='('&&txtArrayChar[4]==')'&&txtArrayChar[9]=='-')||(txtArrayChar[3] =='-'&&txtArrayChar[7]=='-')){
+            Matcher matcher = pattern.matcher(txt);
+            if(matcher.matches()){
                 System.out.println(txt);
             }
         }

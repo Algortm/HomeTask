@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
+
 
 public class UniqueWordCount {
     static final String DEFAULT_PATH_FILE = "src/main/resources/file3.txt";
@@ -32,7 +32,11 @@ public class UniqueWordCount {
                 textFromFile = reader.readLine();
             }
             System.out.println("After count words");
-            System.out.println(hashText.toString());
+            for (Map.Entry<String, Integer> entry : hashText.entrySet()) {
+                String key = entry.getKey();
+                value = entry.getValue();
+                System.out.println( key + " - " + value);
+            }
         }catch (IOException e){
             System.out.println(e.getMessage());
         }
