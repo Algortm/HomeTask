@@ -3,18 +3,20 @@ package module11.task3;
 import java.util.Arrays;
 import java.util.List;
 import java.util.StringJoiner;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.*;
 
 public class SortNumbers {
     final static List<Integer> NUMBERS_LIST = Arrays.asList(5, 0 , 6 ,2 ,4, 1, 3);
     public static void main(String[] args) {
-        List<Integer> result = NUMBERS_LIST.stream()
+        String result = NUMBERS_LIST.stream()
                 .sorted()
-                .toList();
+                .map(String::valueOf)
+                .collect(Collectors.joining(","));
 
-        StringJoiner txt = new StringJoiner(", ");
-        for(Integer num: result){
-            txt.add(String.valueOf(num));
-        }
-        System.out.println(txt);
+
+        System.out.println(result);
     }
 }
